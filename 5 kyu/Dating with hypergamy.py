@@ -13,7 +13,7 @@ the looks levels of the men who stay alone, sorted from hideous to handsome.
 
 def guys_alone_from_group(men, women):
     if not men: return []
-    if not women: return men
+    if not women: return sorted(men)
 
     x = min(women)
     alone, b = [], []
